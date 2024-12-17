@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+    <!-- <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"
+        android:id="@+id/a"
+        android:onClick="sendSignal"
+        android:layout_below="@+id/controllerName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        android:id="@+id/b"
+        android:onClick="sendSignal"
+        android:layout_alignTop="@+id/a"
+        android:layout_toRightOf="@+id/a"
+        android:layout_toEndOf="@+id/a" />
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Controller"
+        android:id="@+id/selectBluetoothButton"
+        android:layout_below="@+id/controllerName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="selectFromList" /> -->
+
+    <TextView
+        android:id="@+id/controllerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectBluetoothButton"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#303f9f"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/selectBluetoothButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="#2196F3"
+        android:fontFamily="@font/roboto_light"
+        android:onClick="selectFromList"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/connect"
+        android:textAlignment="center"
+        android:textColor="#E7EAED"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/supine2sit"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#2196F3"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectBluetoothButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="163dp"
+        android:background="#2196F3"
+        android:clickable="true"
+        android:linksClickable="false"
+        android:text="UP"
+        android:textColor="#F4EFEF" />
+
+    <Button
+        android:id="@+id/stb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectBluetoothButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="233dp"
+        android:background="#2196F3"
+        android:clickable="true"
+        android:linksClickable="false"
+        android:text="STOP"
+        android:textColor="#F4EFEF" />
+
+
+    <Button
+        android:id="@+id/bb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectBluetoothButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="309dp"
+        android:background="#2196F3"
+        android:clickable="true"
+        android:text="DOWN"
+        android:textColor="#F4EFEF" />
+
+</RelativeLayout>
